@@ -3,11 +3,13 @@ a{
   color: black;
 }
 
+/* Navbar */
+
 .navbar{
   position: fixed;
   display: flex;
   height: 13vh;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   font-size: large;
@@ -36,10 +38,13 @@ a{
   width: 7%;
   cursor: pointer;
 }
+
+/* Home Page */
+
 .home{
   padding-top: 13vh ;
   height: 75vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
 }
 .home-left{
@@ -154,13 +159,15 @@ a{
   height: 18vh;
 }
 
+
+/* Resume Page */
+
 .resume{
   padding-top: 13vh;
   /* height: 75vh; */
   background-color: rgb(230,218,205);
   padding-bottom: 5vh;
 }
-
 .res-heading{
   font-size: xxx-large;
   font-weight: 800;
@@ -198,22 +205,26 @@ a{
   flex-direction: column;
   justify-content: center;
   border-right: 2px solid black;
-  border-style: dotted;
+  /* border-style: dotted; */
 }
 .timing{
   color: blue;
   margin-left: 1vw;
+  margin-right: 1vw;
 }
 .job-role{
   margin-left: 1vw;
+  margin-right: 1vw;
   margin-top: 0%;
 }
 .comp-name{
   margin-left: 1vw;
+  margin-right: 1vw;
   margin-top: 0%;
 }
 .comp-loc{
   margin-left: 1vw;
+  margin-right: 1vw;
   margin-top: 0%;
 }
 .container-right{
@@ -269,9 +280,12 @@ a{
   font-size: large;
   font-weight: 700;
   background-color: rgb(244,236,230);
-  border: 1px solid black;
+  border-left: .3vw solid black;
   padding: 3%;
 }
+
+
+/* Projects Page */
 
 .projects{
   padding-top: 13vh;
@@ -313,7 +327,7 @@ a{
 }
 
 
-
+/* Contact Page */
 
 .contact{
   padding-top: 13vh;
@@ -364,6 +378,7 @@ span{
 }
 .footer-text{
   width: 65vw;
+  margin-left: 2vw;
 }
 .call{
   width: 10vw;
@@ -378,7 +393,7 @@ span{
   font-weight: 700;
 }
 .write{
-  width: 10vw;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -405,4 +420,173 @@ span{
   display: flex;
   width: 5vw;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 650px) {
+  .name{
+    width: 100vw;
+    align-items: left;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center;
+  }
+  .nav-about{
+    display: none;
+  }
+  .nav-projects{
+    display: none;
+  }
+  .nav-resume{
+    display: none;
+  }
+  .nav-contacts{
+    display: none;
+  }
+  .home{
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-center{
+    flex-direction: column;
+    position:static;
+    height: fit-content;
+    width: 80vw;
+  }
+  .home-center-left{
+    width: 80vw;
+  }
+  .home-center-right{
+    width: 80vw;
+    padding: 0%;
+  }
+  .dp{
+    width: 35vw;
+  }
+  .photo-name{
+    height: fit-content;
+    padding-bottom: 1vh;
+  }
+  .hello{
+    margin-top: 3vh;
+    font-size: xxx-large;
+    margin-bottom: 0%;
+    height: fit-content;
+  }
+  .discription{
+    font-size: x-large;
+  }
+  .buttons{
+    width: 70vw;
+    gap: 5vw;
+  }
+  .but1{
+    width: 25vw;
+  }
+  .but2{
+    width: 25vw;
+  }
+  .about-me{
+    height: fit-content;
+    text-align: justify;
+  }
+  .footer{
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 5vh;
+  }
+  .footer-text{
+    display: none;
+  }
+  .call{
+    margin-top: 3vh;
+    width: 70vw;
+  }
+  .write{
+    margin-top: 3vh;
+    width: 70vw;
+  }
+  .follow{
+    margin-top: 3vh;
+    width: 70vw;
+  }
+  .follow2{
+    width: 50vw;
+    justify-content: space-evenly;
+  }
+
+  .experience{
+    width: 75vw;
+  }
+  .container{
+    width: 75vw;
+    flex-direction: column;
+  }
+  .container-left{
+    width: 70vw;
+  }
+  .container-right{
+    width: 75vw;
+  }
+  .points{
+    width: 60vw;
+  }
+  .timing{
+    font-size: large;
+  }
+  .job-role{
+    font-size: xx-large;
+  }
+  .comp-name{
+    font-size: large;
+  }
+  .comp-loc{
+    font-size: small;
+  }
+  .points{
+    font-size: medium;
+  }
+  .education{
+    width: 75vw;
+  }
+  .skills{
+    width: 75vw;
+  }
+  .skill-names{
+    grid-template-columns: auto auto;
+    row-gap: 1.5vh;
+    column-gap: 5vw;
+    margin: auto;
+    justify-content: center;
+  }
+  .skill-name{
+    width: 30vw;
+    font-size: small;
+  }
+  .lang-names{
+    width: 75vw;
+    grid-template-columns: auto auto;
+  }
+  .project-container{
+    width: 75vw;
+    height: 25vh;
+  }
+  .contain-left{
+    width: 45vw;
+  }
+  .contain-right{
+    width: 30vw;
+  }
+  .project-img{
+    width: 30vw;
+    height: 25vh;
+  }
+  .p-job-role{
+    font-size: medium;
+  }
 }

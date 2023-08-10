@@ -25,8 +25,8 @@ function Home() {
             <div className='hello'>Hello</div>
             <div className='discription'>Here's who I am & what I do</div>
             <div className='buttons'>
-                <Link to={"/resume"}><button className='but1'>Resume</button></Link>
-                <Link to={"/projects"}><button className='but2'>Projects</button></Link>
+                <Link onClick={() => window.scrollTo(0, 0)} to={"/resume"}><button className='but1'>Resume</button></Link>
+                <Link onClick={() => window.scrollTo(0, 0)} to={"/projects"}><button className='but2'>Projects</button></Link>
             </div>
             <div className='about-me'>Growing data analyst, I bring a strong analytical mindset, proficiency in statistical analysis, and a passion for
 working with data. With solid skills in SQL, Power BI , Tableau, Python, and Excel, I am eager to contribute to
